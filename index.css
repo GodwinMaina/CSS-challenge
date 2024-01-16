@@ -2,9 +2,8 @@
 body{
     height: 812vh;
     background-color: gainsboro;
-    
-    
-   
+    /* overflow-x: hidden; */
+     
 }
 
 .back{
@@ -14,6 +13,7 @@ body{
     background-repeat: no-repeat;
     margin-left:-1rem;
     height: 100vh;
+    
    
 }
 .sectionA{
@@ -41,7 +41,7 @@ body{
     gap: 20px;
     font-size: 18px;
     color: white;
-    margin-left: -20rem;
+    margin-left: -15rem;
     margin-top: 1px;
     justify-content: space-around;
 }
@@ -60,14 +60,39 @@ body{
     cursor: pointer;
 }
 
+
+.log{
+    text-align: center;
+    width: 6rem;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
 .join{
-    background-color:rgb(12, 175, 240);;
     width: 12rem;
     height: 2rem;
     padding-left: 6px;
     padding-top: 10px;
     border-radius: 5px;
+    font-weight: bold;
     cursor: pointer;
+    margin-right: 2rem;
+
+}
+
+.join:hover{
+    
+    background-color:rgb(12, 175, 240);
+}
+
+.log:hover{
+    background-color: rgb(12, 175, 240);
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
 
 .bodyA{
@@ -88,6 +113,7 @@ body{
 .bodyAtxt{
     font-size: 20px;
     margin-top: 30px;
+    
 }
 
 .bodyAbtns{
@@ -99,14 +125,15 @@ body{
     cursor: pointer;
 }
 
-.abtn{
-    background-color: rgb(12, 175, 240);
+.aabtn{
+
     width: 10rem;
     height: 2rem;
     font-size: 20px;
     padding-top:12px;
     border-radius: 20px;
     cursor: pointer;
+    border: solid white 2px;
 }
 
 .bbtn{
@@ -117,6 +144,15 @@ body{
     padding-top:12px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+
+.aabtn:hover{
+    background-color: rgb(12, 175, 240);;
+}
+
+.bbtn:hover{
+    background-color: rgb(12, 175, 240);;
 }
 
 .bodyB{
@@ -136,10 +172,22 @@ body{
 }
 
 .div2{
-    background-color:rgb(12, 175, 240) ;
+    background-color:white;
     padding:2rem ;
     height: 8rem;
 }
+
+
+.div1:hover{
+    background-color: rgb(12, 175, 240);;
+}
+
+.div2:hover{
+    background-color: rgb(12, 175, 240);;
+}
+
+
+
 .img1{
     width: 15%;
 }
@@ -159,31 +207,45 @@ body{
 
 .sectionB{
     background-color: rgb(255, 255, 255);
-    display: grid;
-    gap: 50px;
-    height: 10vh;
-    margin-top: 5rem;
-    padding: 10rem;
-    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    height: 350px;
+    margin-top: 3rem;
+   
 }
 
 .fdiv{
+    display: grid;
+    justify-content: center;
     align-items: center;
+    
     text-align: center;
-    margin-top: -3rem;
-    margin-bottom: 5rem;
+    margin-inline: 5rem;
+    
 }
 
-.div1{
+
+.div4{
+
     font-size: 22px;
    font-weight: bold;
+   margin-top: -5rem;
 }
 
 .pad{
-    margin-top: -7rem;
+   
     font-size: 18px;
+    margin-top:-12rem ;
     color: darkgray;
 }
+
+.img4{
+    width: 25%;
+}
+
+
 
 .sectionC{
     padding: 10rem;
@@ -252,30 +314,33 @@ body{
 
 .subscribe{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 5rem;
-    border: 1px;
-    height: 13vh;
+    border: 3px;
+    height: 17vh;
     width: 100%;
+    text-transform: capitalize;
     cursor: pointer;
+    background:linear-gradient(to right, #071eae, #d020d0);
     
 }
 
 .news{
-    background-color: rgba(7, 7, 189, 0.897);
-    width:100%;
+   
+    width:50%;
     color: white;
     font-weight: bold;
     align-items: center;
     display: flex;
-    margin-left: -3rem;
+    justify-content: flex-start;
+    margin-left: 3rem;
     padding:2rem;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .email{
-    background-color: rgb(156, 7, 156);
-    width: 100%;
+    
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,9 +349,9 @@ body{
 }
 
 .input{
-    height: 6vh;
-    width: 20vw;
-    border-right: 0px white solid;
+    height: 7vh;
+    width: 30vw;
+    
 
 
 }
@@ -296,11 +361,16 @@ body{
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    height: 5vh;
-    width:5vw;
-    border: white solid 1px;
+    height: 6.5vh;
+    border:  white solid 1px;
+    width:10vw;
+    border-left: none;
+    /* border: white solid 1px; */
+    /* border-radius: 2px; */
     color: white;
-    margin:1px;
+    text-align: center;
+    margin-right:5rem;
+    margin-top: 2.1rem;
     align-items: center;
     cursor: pointer;
     
@@ -340,7 +410,6 @@ body{
     border: solid  rgb(12, 175, 240)  1px;
     height: 640px;
     width: 20vw;
-    margin-top: 40px;
     border-radius: 1rem;
     padding: 1rem;
     font-weight: bold;
@@ -348,15 +417,47 @@ body{
 }
 
 .card2{
-    background-color:rgb(2, 2, 29);
+    background-color: white;
     border: solid  rgb(12, 175, 240)  1px;
-    border-radius: 1rem;
-    height: 670px;
+    height: 640px;
     width: 20vw;
-    padding: 20px;
-    color: white;   
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size:15px;   
 }
 
+.card1:hover {
+    color: white;
+    background-color:rgb(2, 2, 29) ;
+    height: 650px;
+    margin-top:-3.5rem;
+    
+}
+
+.card1:hover :not(:hover){
+    color: white;
+}
+
+.card2:hover :not(:hover){
+        color: white;
+    }
+    
+        
+.card2:hover{
+    background-color:rgb(2, 2, 29) ;
+    height: 650px;
+    margin-top: -3.5rem;
+
+}
+
+.pbd:hover{
+    color: white;
+}
+
+.pbd1:hover{
+    color: white;
+}
 
 .free{
     font-weight: bold;
@@ -380,10 +481,11 @@ body{
 .pbd{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin-top: -2.3rem;
     font-size: 18px;
+    margin-left: 2rem;
     font-weight: bold;
     color: black;
    
@@ -392,12 +494,13 @@ body{
 .pbd1{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin-top: -2.3rem;
+    margin-left: 2rem;
     font-size: 18px;
     font-weight: bold;
-    color:white;
+    color:black;
 }
 
 .checkbt{
@@ -487,7 +590,7 @@ input{
     height:6.5vh;
     width: 105%;
     border-radius: 6px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
     margin-left: -2rem;
     border: 1px whitesmoke;
     background-color: lightgray;
@@ -580,7 +683,7 @@ label{
 .sectionE{
     background-color: white;
     margin-top:-12rem ;
-    height: 60vh;
+    height: 49vh;
     
 }
 
@@ -618,6 +721,7 @@ label{
 .footers{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 10rem;
     margin-right: 10rem;
    
@@ -626,9 +730,11 @@ label{
 }
 
 .divo{
+   
     color: darkgrey;
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .divob{
@@ -645,3 +751,1391 @@ label{
    
 }
 
+
+
+@media only screen and (max-width:767px){
+
+
+    body{
+       
+        background-color: gainsboro;
+        height: 1205vh;
+      
+         
+    }
+
+
+    .back{
+        background-image: url("./images/bg.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+ 
+    }
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 2rem;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        
+    }
+    
+    .join{
+       
+        height: 2rem;
+        padding-left: 6px;
+        padding-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    
+    }
+
+    .sectionA{
+        margin-inline: 3px;
+        
+    }
+    
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .brand{
+        font-weight: bold;
+        color: white;
+        font-size:25px;
+    }
+
+    .menu{
+        display: none;
+       
+    }
+
+
+    .bodyA{
+        color: white;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+       
+    }
+
+    .bodyApara{
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+        padding-top: 5rem;
+        margin-bottom: 2rem;
+    
+    }
+
+
+    
+    .bodyAtxt{
+        font-size: 20px;
+        margin-top:9px;
+        
+    }
+
+    .bodyAbtns{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        cursor: pointer;
+        padding-top: 8px;
+    }
+    
+    
+    .aabtn{
+        width: 8rem;
+        font-weight: bolder;
+        height: 2rem;
+        font-size: 14px;
+        padding-top:15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .bbtn{
+        border: solid white 2px;
+        width: 8rem;
+        height: 2rem;
+        font-weight: bolder;
+        font-size: 15px;
+        padding-top:15px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+
+    .bodyB{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top:3rem;
+        align-items: center;
+        justify-content: center;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+
+
+    .div1{
+        background-color:white;
+        height:15rem;
+        width:90vw;
+        margin-left: -1rem;
+        padding-left: 1rem;
+        text-align: center;
+
+    }
+    
+    .div2{
+        background-color:white ;
+        height:15rem;
+        color: black;
+        width:90vw;
+        margin-left: -1rem;
+        padding-left: 1rem;
+        text-align: center;
+    }
+
+
+    .img1{
+        width: 20%;
+    }
+    
+    .title{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .texty{
+        font-size: 20px;
+        font-weight: light;
+        margin-top: 10px;
+        
+    }
+
+
+    .sectionB{
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        margin-top: 1rem;
+        /* max-width: 100vw; */
+        height:130vh;
+        grid-template-columns: repeat(1,1fr); 
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+       
+    }
+    
+    .fdiv{
+        height: 26vh;
+        gap: -3rem;
+        padding: 1rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+        
+       
+  
+    .div4{
+        font-size: 22px;
+       font-weight: bold;
+       margin-top: 1rem;
+
+    }
+    
+    .pad{
+       
+        font-size: 20px;
+        color: darkgray;
+        margin-top: 1rem;
+    }
+
+
+    .img4{
+        width:20%;
+        margin-top: 1rem;
+    }
+
+    
+
+
+    .sectionC{
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .industry{
+        text-align: center;
+    }
+    
+    .indy{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+    .indyp{
+        font-size: 20px;
+        color: darkgray;
+    }
+    
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 7px;
+        margin-top: 3rem;
+        margin-right: -1.5rem;
+    }
+    
+    .prof1{
+        background-color: white;
+        height: 250px;
+        text-align: center;
+        align-items: center;
+        padding: 3rem;
+    }
+    
+    .rimg{
+        width: 35%;   
+    }
+    
+    .review{
+        margin-top:20px;
+        font-size: 15px;
+        font-weight: 800;
+        color: darkgray;
+    }
+    
+    .stars{
+        margin-top: 2rem;
+        align-items: flex-start;
+    }
+    
+    
+    .vectors{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left:2rem;
+        margin-top:3rem ;
+    
+    }
+    
+    .vect{
+        width: 60%;
+    }
+    
+    .subscribe{
+        background:linear-gradient(to right, #071eae, #d020d0);
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5rem;
+        border: 1px;
+        height: 13vh;
+        width: 100%;
+        cursor: pointer;
+       
+        
+    }
+    
+    .news{
+
+    width:50%;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    padding:2rem;
+    font-size: 18px;
+        
+    }
+    
+    .email{
+        width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+       
+    }
+    
+    .input{
+        height: 7vh;
+        width: 45vw;
+        margin-left: 2rem;
+        
+    }
+    
+    .btnsd{
+
+    background-color: rgb(12, 175, 240) ;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    height: 6.5vh;
+    border:  white solid 1px;
+    width:14vw;
+    border-left: none;
+    /* border: white solid 1px; */
+    /* border-radius: 2px; */
+    color: white;
+    text-align: center;
+    margin-right:5rem;
+    margin-top: 1.3rem;
+    align-items: center;
+    cursor: pointer;
+       
+        
+    }
+    
+    
+    .pricing{
+      
+        text-align: center;
+        width: 100%;
+        margin-top: 5rem;
+    
+    }
+    
+    .pricetitle{
+        font-size:40px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+    .pricedec{
+        font-size: 20px;
+        color:darkgray;
+    }
+    
+    .pricecards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        gap: 10px;
+        margin-left: 2.7rem;
+      
+    }
+    
+    
+    .card1{
+        background-color: white;
+        border: solid  rgb(12, 175, 240)  1px;
+        height: 500px;
+        width: 75vw;
+        margin-top: 2px;
+        border-radius: 1rem;
+        padding: 1rem;
+        font-weight: bold;
+        font-size:10px;
+    }
+    
+    .card2{
+        border: solid  rgb(12, 175, 240)  1px;
+        border-radius: 1rem;
+        height: 500px;
+        width: 75vw;
+        padding: 20px;
+        color: white;   
+    }
+    
+    .card2:hover{
+        background-color:rgb(2, 2, 29) ;
+        height: 520px;
+        margin-top: 40px
+    
+    }
+
+    .card1:hover{
+        background-color:rgb(2, 2, 29) ;
+        height: 520px;
+        margin-top: 40px
+    
+    }
+    
+    
+    .free{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 1rem;
+        margin-left: -3rem;
+    }
+    
+    .hand{
+        font-weight: 200;
+        color: darkgray;
+        font-size: 15px;
+        padding: 1rem;
+        margin-left: -3rem;
+    }
+    
+    .dollar{
+        font-size:20px;
+        color:rgb(12, 175, 240) ;
+    
+        
+    }
+    
+    .pbd{
+        display: flex;
+        text-align: center;
+        justify-content: start;
+        align-items: center;
+        margin-top: -2.3rem;
+        margin-left: 2rem;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+       
+    }
+    
+    .pbd1{
+        display: flex;
+        text-align: center;
+        justify-content: start;
+        margin-left: 2rem;
+        align-items: center;
+        margin-top: -2.3rem;
+        font-size: 18px;
+        font-weight: bold;
+        color:black;
+    }
+    
+    .checkbt{
+       
+        width: 1.5rem;
+        border-radius:40px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgba(143, 255, 143, 0.938);
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    .blueme{
+        margin-top: 3rem;
+        background-color: rgb(12, 175, 240) ;
+        border-radius: 1rem;
+        padding: 1rem;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    
+    
+.sectionD{
+    background-color:rgb(2, 2, 29) ;
+    height: 120vh;
+    margin-top: -4rem;
+    background-size: cover;
+}
+
+.dsection{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 5rem;
+    padding-top:2rem;
+    gap: 5rem;
+}
+
+.branches{
+    color: white;
+    font-weight: bold;
+   ;
+}
+
+.branch2{
+    font-size: 40px;
+}
+.branchesp{
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mapdiv{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.sectionED{
+    margin: 2rem;
+    padding: 0%;
+    margin-top: -18rem;
+}
+
+.edal{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.conty{
+    width:100%;
+    background-size:100vw;
+    height: 100vh;
+}
+
+.contdt{
+    grid-column: span 3;
+    background-color:whitesmoke;
+    padding: 2.3rem;
+  
+}
+
+input{
+    width: 10rem;
+    height:6.5vh;
+    width: 117%;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    margin-left: -2rem;
+    border: 1px whitesmoke;
+    background-color: lightgray;
+    
+}
+
+label{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: dark;
+    margin-left: -2rem;
+}
+
+
+.sele{
+    display: flex;
+    border-radius: 10px;
+   
+}
+.sel{
+    margin-left: -8rem;
+    width: 7vw;
+    display: flex;
+    height: 6.4vh;
+    background-color: lightgray;
+    border: 1px lightgray ;
+    font-size: 20px;
+    color: gray;   
+}
+.bookyh{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.appoint{
+    background: rgb(8, 151, 207);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 105%;
+    height:6.5vh ;
+    margin-left: -2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.consult{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+   
+}
+
+.consultbtn{
+    background-color:rgb(8, 151, 207) ;
+    color: white;
+    width: 15vw;
+    display: flex;
+    margin-top: -2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 12px;
+    height: 7.5vh;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.consultpara h2{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: -1rem;
+}
+
+.consultpara p{
+    color: darkgray;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.sectionE{
+    background-color: white;
+    margin-top:2rem ;
+    height: 110vh;
+    
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 3rem;
+    padding-top:2rem;
+    
+   
+}
+
+.footp{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footlinks li{
+    list-style: none;
+    color: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.X{
+    display: flex;
+    gap: 3px;
+    margin-top:1rem;
+}
+
+.footers{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    
+   
+   
+   
+}
+
+.divo{
+   
+    color: darkgrey;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.divob li{
+    list-style: none;
+    text-align: center;
+    font-size: 3px;
+    margin: 1rem;
+   
+}
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+
+    /* Styles for Mobile Devices */
+body {
+    background-color: gainsboro;
+    height: 1205vh;
+}
+
+/* ... (your existing styles for mobile devices) */
+
+/* Styles for Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    .body{
+        height:1400vh;
+    }
+   
+
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 4rem;
+        align-items: center;
+        
+        
+    }
+
+    .sectionA{
+
+        margin-left:2px;
+        margin-right:2px;
+          
+    }
+
+   
+
+    .brand{
+        font-weight: bold;
+        font-size: 29px;
+    }
+
+
+    .menu{
+        display: none;
+        gap: 15px;
+        font-size: 15px;
+        color: white;
+        margin-left: 4rem;
+        margin-top: 1px;
+        justify-content: space-between;
+    }
+
+
+    
+.login{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    margin-right: -5rem;
+    cursor: pointer;
+}
+
+
+.log{
+    text-align: center;
+    width: 5rem;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+
+.join{
+ 
+    height: 2rem;
+    padding-left: 2px;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1rem;
+
+}
+
+
+.bodyA{
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 12rem;
+   
+}
+
+.bodyApara{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}   
+
+
+
+
+
+.bodyAtxt{
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+
+.bodyAbtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+.aabtn{
+
+    width: 8rem;
+    height: 2rem;
+    font-size: 18px;
+    padding-top:12px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: solid white 2px;
+}
+
+
+
+
+.bbtn{
+    border: solid white 2px;
+    width: 7rem;
+    height: 2rem;
+    font-size: 18px;
+    padding-top:15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.bodyB{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+   
+  
+}
+
+
+
+.img1{
+    width: 25%;
+}
+
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.texty{
+    font-size: 20px;
+    font-weight: light;
+    margin-top: 7px;
+    
+}
+
+
+
+.sectionB{
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    display: flex;
+    gap: 10px;
+    height: 450px;
+    margin-top: 3rem;
+   
+}
+
+
+.fdiv{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    margin-inline: 2rem;
+    
+}
+
+
+.div4{
+
+    font-size: 20px;
+   font-weight: bold;
+   margin-top: -4rem;
+}
+
+.pad{
+   
+    font-size: 16px;
+    margin-top:-10rem ;
+    color: darkgray;
+}
+
+.img4{
+    width: 30%;
+}
+
+
+
+.sectionC{
+    padding: 1rem;
+    padding-top: 7rem;
+}
+
+.industry{
+    text-align: center;
+}
+
+.indy{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.indyp{
+    font-size: 20px;
+    color: darkgray;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 6rem;
+
+}
+
+.prof1{
+    background-color: white;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.rimg{
+    width: 70%;   
+}
+
+.review{
+    margin-top:10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: darkgray;
+}
+
+.stars{
+    margin-top: 1rem;
+    align-items: flex-start;
+}
+
+
+.vectors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10rem ;
+
+}
+
+.vectors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:8rem ;
+    margin-left: -4rem;
+}
+.vect{
+    width: 30%;
+
+}
+
+
+.subscribe{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    border: 3px;
+    height: 17vh;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+    background:linear-gradient(to right, #071eae, #d020d0);
+    
+}
+
+.pricing{
+  
+    text-align: center;
+    width: 100%;
+    margin-top: 7rem;
+
+}
+
+.pricetitle{
+    font-size:50px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.pricedec{
+    font-size: 20px;
+    color:darkgray;
+}
+
+.pricecards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin:1rem;
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+}
+
+
+.card1{
+    background-color: white;
+    border: solid  rgb(12, 175, 240)  1px;
+    height: 640px;
+    width: 25vw;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size:15px;
+}
+
+.card2{
+    background-color: white;
+    border: solid  rgb(12, 175, 240)  1px;
+    height: 640px;
+    width: 25vw;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size:1px;   
+}
+
+
+.free{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 2rem;
+}
+
+.hand{
+    font-weight: 300;
+    color: darkgray;
+    font-size: 15px;
+    padding: 2rem;
+}
+
+.dollar{
+    font-size: 20px;
+    color:rgb(12, 175, 240) ;
+    
+}
+
+.pbd{
+    display: flex;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    margin-top: -2.3rem;
+    font-size: 18px;
+    margin-left: 2rem;
+    font-weight: bold;
+    color: black;
+   
+}
+
+.pbd1{
+    display: flex;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    margin-top: -2.3rem;
+    margin-left: 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+
+
+.sectionD{
+    background-color:rgb(2, 2, 29) ;
+    height: 100vh;
+    margin-top:-3rem;
+    margin: 2rem;
+}
+
+.dsection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 4rem;
+    padding-top:3rem;
+    gap: 10rem;
+}
+
+.branches{
+    color: white;
+    font-weight: bold;
+   ;
+}
+
+
+.branch2{
+    font-size: 30px;
+}
+.branchesp{
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mapdiv{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+.sectionED{
+    margin: 5rem;
+    padding: 0%;
+    margin-top: -18rem;
+}
+
+.edal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.conty{
+    width:100%;
+    height: 100vh;
+}
+
+.contdt{
+    grid-column: span 2;
+    background-color:whitesmoke;
+    padding: 5rem;
+  
+}
+
+input{
+    width: 10rem;
+    height:6.5vh;
+    width: 105%;
+    border-radius: 6px;
+    margin-bottom: 1.4rem;
+    margin-left: -2rem;
+    border: 1px whitesmoke;
+    background-color: lightgray;
+    
+}
+
+label{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: dark;
+    margin-left: -2rem;
+}
+
+
+.sele{
+    display: flex;
+    border-radius: 10px;
+   
+}
+.sel{
+    margin-left: -8rem;
+    width: 7vw;
+    display: flex;
+    height: 6.4vh;
+    background-color: lightgray;
+    border: 1px lightgray ;
+    font-size: 20px;
+    color: gray;   
+}
+.bookyh{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -2rem;
+    margin-bottom: 2.5rem;
+}
+
+.appoint{
+    background: rgb(8, 151, 207);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 105%;
+    height:6.5vh ;
+    margin-left: -2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.consult{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 3rem;
+    margin-bottom: 15rem;
+    align-items: center;
+
+}
+
+.consultbtn{
+    background-color:rgb(8, 151, 207) ;
+    color: white;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 17px;
+    height: 6.5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.consultpara h2{
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-top: -1rem;
+}
+
+.consultpara p{
+    color: darkgray;
+    margin-top: -1rem;
+    font-size: 25px;
+}
+
+.sectionE{
+    background-color: white;
+    margin-top:-12rem ;
+    height: 90vh;
+    
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2rem;
+    padding-top:3rem;
+    
+   
+}
+
+.footp{
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footlinks li{
+    list-style: none;
+    color: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.X{
+    display: flex;
+    gap: 5px;
+    margin-top:1rem;
+}
+
+.footers{
+    display: flex;
+    justify-content: center;
+    gap:20rem;
+    align-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+   
+   
+   
+}
+
+.divo{
+   
+    color: darkgrey;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.divob{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.divob li{
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+    margin: 1rem;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+  }   
+}
+
+
+
+
+
+    
