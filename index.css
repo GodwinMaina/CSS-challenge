@@ -1,8 +1,14 @@
-
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
-    height: 812vh;
-    background-color: gainsboro;
-    /* overflow-x: hidden; */
+  
+    background-color:lavender;
+    max-width:100vw;
+    overflow-x: hidden;
+
+    
      
 }
 
@@ -11,17 +17,17 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left:-1rem;
+    /* margin-left:-1rem; */
     height: 100vh;
-    
+    width: 100vw;
    
 }
-.sectionA{
+/* .sectionA{ */
 
-    margin-left:-7px;
-    margin-right:-7px;
-    margin-top:-5px;   
-}
+    /* margin-left:-7px; */
+    /* margin-right:-7px; */
+    /* margin-top:-5px;    */
+/* } */
 
 
 .navbar{
@@ -159,9 +165,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 8rem;
-    margin-left: 12rem;
-    margin-right: 10rem;
+    
    
   
 }
@@ -318,7 +322,7 @@ body{
     margin-top: 5rem;
     border: 3px;
     height: 17vh;
-    width: 100%;
+
     text-transform: capitalize;
     cursor: pointer;
     background:linear-gradient(to right, #071eae, #d020d0);
@@ -397,11 +401,13 @@ body{
 }
 
 .pricecards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    margin:4rem;
-    margin-top: 4rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+   
+    
 }
 
 
@@ -409,18 +415,18 @@ body{
     background-color: white;
     border: solid  rgb(12, 175, 240)  1px;
     height: 640px;
-    width: 20vw;
+    width: 25%;
     border-radius: 1rem;
     padding: 1rem;
     font-weight: bold;
-    font-size:15px;
+    font-size:18px;
 }
 
 .card2{
     background-color: white;
     border: solid  rgb(12, 175, 240)  1px;
     height: 640px;
-    width: 20vw;
+    width: 25%;
     border-radius: 1rem;
     padding: 1rem;
     font-weight: bold;
@@ -469,36 +475,37 @@ body{
     font-weight: 300;
     color: darkgray;
     font-size: 22px;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .dollar{
-    font-size: 45px;
+    font-size: 35px;
     color:rgb(12, 175, 240) ;
     
 }
 
 .pbd{
     display: flex;
-    text-align: center;
+    text-align: start;
     justify-content: start;
-    align-items: center;
-    margin-top: -2.3rem;
-    font-size: 18px;
-    margin-left: 2rem;
-    font-weight: bold;
     color: black;
+    margin-top: -2.3rem;
+    margin-left: 2rem;
+    font-size: 18px;
+    height: 50px;
+    font-weight: bold;
    
 }
 
 .pbd1{
     display: flex;
-    text-align: center;
+    text-align: start;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     margin-top: -2.3rem;
     margin-left: 2rem;
     font-size: 18px;
+    height: 50px;
     font-weight: bold;
     color:black;
 }
@@ -517,7 +524,7 @@ body{
 }
 
 .blueme{
-    margin-top: 3rem;
+    margin-top: 4rem;
     background-color: rgb(12, 175, 240) ;
     border-radius: 1rem;
     padding: 1rem;
@@ -578,6 +585,11 @@ body{
     height: 100vh;
 }
 
+.compy{
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+  
+}
 .contdt{
     grid-column: span 2;
     background-color:whitesmoke;
@@ -676,7 +688,7 @@ label{
 
 .consultpara p{
     color: darkgray;
-    margin-top: -1rem;
+    margin-top: 1rem;
     font-size: 25px;
 }
 
@@ -756,14 +768,23 @@ label{
 @media only screen and (max-width:767px){
 
 
-    body{
-       
-        background-color: gainsboro;
-        height: 1205vh;
-      
-         
-    }
+   /* *, */
+/* ::after, */
+/* ::before { */
+  /* margin: 12; */
+  /* margin-right: 10; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
 
+/* } */
+
+body{
+    
+  
+        background-color:lavender;
+        max-width:85vw;
+    
+}
 
     .back{
         background-image: url("./images/bg.png");
@@ -775,19 +796,36 @@ label{
     .login{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        height: 2rem;
+        justify-content: start;
+        height: 1rem;
         color: white;
-        font-size: 18px;
+        font-size: 15px;
         cursor: pointer;
+        margin-right: 1rem;
+        
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .log{
+        text-align: center;
+        width: 2rem;
+        font-weight: bold;
+        font-size: 20px;
         
     }
     
     .join{
        
         height: 2rem;
+        width: 10rem;
         padding-left: 6px;
         padding-top: 10px;
+        /* margin-top: 0.9rem; */
         border-radius: 5px;
         cursor: pointer;
     
@@ -796,20 +834,14 @@ label{
     .sectionA{
         margin-inline: 3px;
         
+        
     }
     
-
-    .navbar{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
 
     .brand{
         font-weight: bold;
         color: white;
-        font-size:25px;
+        font-size:18px;
     }
 
     .menu{
@@ -827,7 +859,7 @@ label{
     }
 
     .bodyApara{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         text-transform: capitalize;
         text-align: center;
@@ -857,17 +889,18 @@ label{
     .aabtn{
         width: 8rem;
         font-weight: bolder;
-        height: 2rem;
+        height: 3rem;
         font-size: 14px;
         padding-top:15px;
         border-radius: 10px;
+        padding: -3;
         cursor: pointer;
     }
     
     .bbtn{
         border: solid white 2px;
         width: 8rem;
-        height: 2rem;
+        height: 3rem;
         font-weight: bolder;
         font-size: 15px;
         padding-top:15px;
@@ -880,31 +913,41 @@ label{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-top:3rem;
-        align-items: center;
+        width: 65vw;
+        margin-left: 55px;
+        align-items: start;
         justify-content: center;
-        padding-right: 1rem;
+       
         margin-top: 2rem;
     }
 
 
     .div1{
         background-color:white;
-        height:15rem;
-        width:90vw;
+        height:55vh;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         margin-left: -1rem;
         padding-left: 1rem;
-        text-align: center;
+        text-align: start;
+        justify-content: center;
 
     }
     
     .div2{
-        background-color:white ;
-        height:15rem;
-        color: black;
-        width:90vw;
-        margin-left: -1rem;
+        background-color:white;
+        height:55vh;
+        width: 100%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        margin-left:-1rem;
         padding-left: 1rem;
-        text-align: center;
+        text-align: start;
+        justify-content: center;
+
     }
 
 
@@ -928,27 +971,29 @@ label{
 
     .sectionB{
         background-color: rgb(255, 255, 255);
-        display: grid;
-        margin-top: 1rem;
-        /* max-width: 100vw; */
-        height:130vh;
-        grid-template-columns: repeat(1,1fr); 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        height:140vh;
         justify-content: center;
         text-align: center;
         align-items: center;
+      
         
        
     }
     
     .fdiv{
-        height: 26vh;
-        gap: -3rem;
+        height: 36vh;
+        gap: 1rem;
         padding: 1rem;
         display: grid;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        
     }
         
        
@@ -983,6 +1028,7 @@ label{
     
     .industry{
         text-align: center;
+        font-size: 20px;
     }
     
     .indy{
@@ -997,23 +1043,25 @@ label{
     }
     
     .profile{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 7px;
+        display: flex;
+       flex-wrap: wrap;
         margin-top: 3rem;
-        margin-right: -1.5rem;
+        margin: 4rem;
+
     }
     
     .prof1{
         background-color: white;
-        height: 250px;
+        height: 450px;
+        width:100%;
         text-align: center;
         align-items: center;
-        padding: 3rem;
+        padding: 2rem;
     }
     
     .rimg{
-        width: 35%;   
+        width: 80%;
+        margin-bottom: 1rem;   
     }
     
     .review{
@@ -1021,11 +1069,16 @@ label{
         font-size: 15px;
         font-weight: 800;
         color: darkgray;
+        text-align: start;
     }
     
     .stars{
         margin-top: 2rem;
-        align-items: flex-start;
+        display: grid;
+        margin-left: -1rem;
+        
+        grid-template-columns: repeat(5,1fr);
+
     }
     
     
@@ -1035,24 +1088,25 @@ label{
         align-items: center;
         margin-left:2rem;
         margin-top:3rem ;
+        margin-bottom: 4rem;
     
     }
+
     
     .vect{
-        width: 60%;
+        width: 70%;
     }
     
     .subscribe{
         background:linear-gradient(to right, #071eae, #d020d0);
         display: flex;
-        justify-content: space-evenly;
-        margin-top: 5rem;
-        border: 1px;
-        height: 13vh;
         width: 100%;
+        margin-top:1rem;
+        border: 1px;
+        margin-left: -0.5rem;
+        height: 9vh;
         cursor: pointer;
-       
-        
+           
     }
     
     .news{
@@ -1063,9 +1117,8 @@ label{
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    margin-left: 2rem;
-    padding:2rem;
-    font-size: 18px;
+    padding:1rem;
+    font-size: 10px;
         
     }
     
@@ -1080,28 +1133,28 @@ label{
     }
     
     .input{
-        height: 7vh;
-        width: 45vw;
-        margin-left: 2rem;
+        height: 1vh;
+        width: 80vw;
+        margin-left: 1rem;
+        margin-top: 1;
+        padding:1rem ;
         
     }
     
     .btnsd{
 
     background-color: rgb(12, 175, 240) ;
-    font-size: 13px;
+    
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    height: 6.5vh;
+    height: 3.8vh;
     border:  white solid 1px;
-    width:14vw;
+    width:16vw;
     border-left: none;
-    /* border: white solid 1px; */
-    /* border-radius: 2px; */
     color: white;
     text-align: center;
-    margin-right:5rem;
-    margin-top: 1.3rem;
+    /* margin-right:-rem; */
+    margin-top: 0.5rem;
     align-items: center;
     cursor: pointer;
        
@@ -1112,13 +1165,13 @@ label{
     .pricing{
       
         text-align: center;
-        width: 100%;
+        justify-content: center;
         margin-top: 5rem;
     
     }
     
     .pricetitle{
-        font-size:40px;
+        font-size:30px;
         font-weight: bold;
         margin-bottom: 1rem;
     }
@@ -1129,11 +1182,14 @@ label{
     }
     
     .pricecards{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
         text-align: center;
-        gap: 10px;
-        margin-left: 2.7rem;
+        gap: 30px;
+        margin-left: 1rem;
+        margin-bottom: 4rem;
       
     }
     
@@ -1141,34 +1197,34 @@ label{
     .card1{
         background-color: white;
         border: solid  rgb(12, 175, 240)  1px;
-        height: 500px;
-        width: 75vw;
+        height: 600px;
+        width: 70vw;
         margin-top: 2px;
         border-radius: 1rem;
         padding: 1rem;
         font-weight: bold;
-        font-size:10px;
+        font-size:7px;
     }
     
     .card2{
         border: solid  rgb(12, 175, 240)  1px;
         border-radius: 1rem;
-        height: 500px;
-        width: 75vw;
+        height: 600px;
+        width: 70vw;
         padding: 20px;
         color: white;   
     }
     
     .card2:hover{
         background-color:rgb(2, 2, 29) ;
-        height: 520px;
+        height: 620px;
         margin-top: 40px
     
     }
 
     .card1:hover{
         background-color:rgb(2, 2, 29) ;
-        height: 520px;
+        height: 620px;
         margin-top: 40px
     
     }
@@ -1176,7 +1232,7 @@ label{
     
     .free{
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 1rem;
         margin-left: -3rem;
     }
@@ -1190,7 +1246,7 @@ label{
     }
     
     .dollar{
-        font-size:20px;
+        font-size:18px;
         color:rgb(12, 175, 240) ;
     
         
@@ -1201,9 +1257,9 @@ label{
         text-align: center;
         justify-content: start;
         align-items: center;
-        margin-top: -2.3rem;
-        margin-left: 2rem;
-        font-size: 18px;
+        margin-top: -2.8rem;
+        margin-left: 3rem;
+        font-size: 14px;
         font-weight: bold;
         color: black;
        
@@ -1213,10 +1269,10 @@ label{
         display: flex;
         text-align: center;
         justify-content: start;
-        margin-left: 2rem;
         align-items: center;
-        margin-top: -2.3rem;
-        font-size: 18px;
+        margin-top: -2.8rem;
+        margin-left: 3rem;
+        font-size: 14px;
         font-weight: bold;
         color:black;
     }
@@ -1225,7 +1281,7 @@ label{
        
         width: 1.5rem;
         border-radius:40px;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         color: white;
         font-family: 'Courier New', Courier, monospace;
@@ -1239,8 +1295,9 @@ label{
         background-color: rgb(12, 175, 240) ;
         border-radius: 1rem;
         padding: 1rem;
+        margin: 2rem;
         color: white;
-        font-size: 17px;
+        font-size: 15px;
         cursor: pointer;
     }
     
@@ -1248,16 +1305,17 @@ label{
 .sectionD{
     background-color:rgb(2, 2, 29) ;
     height: 120vh;
-    margin-top: -4rem;
+    margin-top: 1rem;
     background-size: cover;
 }
 
 .dsection{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
     padding-top:2rem;
-    gap: 5rem;
+    gap:3rem;
 }
 
 .branches{
@@ -1267,10 +1325,12 @@ label{
 }
 
 .branch2{
-    font-size: 40px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 .branchesp{
-    font-size: 17px;
+    font-size: 12px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -1280,20 +1340,24 @@ label{
 }
 
 .sectionED{
-    margin: 2rem;
-    padding: 0%;
-    margin-top: -18rem;
+    margin: 1rem;
+    margin-top: -35rem;
 }
 
 .edal{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   
 }
 
 .conty{
     width:100%;
-    background-size:100vw;
-    height: 100vh;
+    background-size: 100vw;
+    
+    height: 40vh;
+    
 }
 
 .contdt{
@@ -1304,9 +1368,9 @@ label{
 }
 
 input{
-    width: 10rem;
-    height:6.5vh;
-    width: 117%;
+    
+    height:7.5vh;
+    width: 100%;
     border-radius: 6px;
     margin-bottom: 1.5rem;
     margin-left: -2rem;
@@ -1322,7 +1386,10 @@ label{
     margin-left: -2rem;
 }
 
-
+.mapdiv{
+    width: 100%;
+    
+}
 .sele{
     display: flex;
     border-radius: 10px;
@@ -1330,7 +1397,7 @@ label{
 }
 .sel{
     margin-left: -8rem;
-    width: 7vw;
+    width: 8vw;
     display: flex;
     height: 6.4vh;
     background-color: lightgray;
@@ -1341,7 +1408,7 @@ label{
 .bookyh{
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 1rem;
     margin-bottom: 2.5rem;
 }
@@ -1354,9 +1421,9 @@ label{
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    width: 105%;
-    height:6.5vh ;
-    margin-left: -2rem;
+    width: 50%;
+    height:7.5vh ;
+   margin-left: 4rem;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
@@ -1364,23 +1431,23 @@ label{
 
 .consult{
     display: flex;
-    justify-content:space-evenly;
+   flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
    
 }
 
 .consultbtn{
     background-color:rgb(8, 151, 207) ;
     color: white;
-    width: 15vw;
+    width: 20vw;
     display: flex;
-    margin-top: -2rem;
+    margin-top: 2rem;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
     font-size: 12px;
-    height: 7.5vh;
+    height: 4.5vh;
     font-weight: bold;
     cursor: pointer;
 
@@ -1402,13 +1469,13 @@ label{
 .sectionE{
     background-color: white;
     margin-top:2rem ;
-    height: 110vh;
+    height: 190vh;
     
 }
 
 .footer{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     margin: 3rem;
     padding-top:2rem;
     
@@ -1440,6 +1507,8 @@ label{
 .footers{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     gap: 5rem;
     
    
@@ -1451,7 +1520,7 @@ label{
    
     color: darkgrey;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .divob{
@@ -1473,30 +1542,21 @@ label{
 }
 
 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Styles for tablets */
 
     /* Styles for Mobile Devices */
-body {
-    background-color: gainsboro;
-    height: 1205vh;
-}
 
+}
 /* ... (your existing styles for mobile devices) */
 
 /* Styles for Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-
-    .body{
-        height:1400vh;
+    body {
+        background-color: gainsboro;
+       
     }
-   
-
 
     .navbar{
         display: flex;
@@ -1518,16 +1578,17 @@ body {
 
     .brand{
         font-weight: bold;
-        font-size: 29px;
+        font-size: 30px;
     }
 
 
     .menu{
-        display: none;
-        gap: 15px;
+        display: flex;
+        gap: 10px;
         font-size: 15px;
         color: white;
-        margin-left: 4rem;
+        font-weight: bold;
+        margin-left: 1rem;
         margin-top: 1px;
         justify-content: space-between;
     }
@@ -1638,8 +1699,12 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+    width: 80vw;
     
-   
   
 }
 
@@ -1667,7 +1732,7 @@ body {
 
 .sectionB{
     background-color: rgb(255, 255, 255);
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
     gap: 10px;
     height: 450px;
@@ -1680,7 +1745,6 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    
     text-align: center;
     margin-inline: 2rem;
     
@@ -1765,16 +1829,11 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top:10rem ;
-
-}
-
-.vectors{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top:8rem ;
     margin-left: -4rem;
+
 }
+
+
 .vect{
     width: 30%;
 
@@ -1784,13 +1843,66 @@ body {
 .subscribe{
     display: flex;
     justify-content: space-around;
-    margin-top: 5rem;
     border: 3px;
-    height: 17vh;
+    height: 9vh;
     width: 100%;
+    margin: 1rem;
+    margin-top: 4rem;
     text-transform: capitalize;
     cursor: pointer;
     background:linear-gradient(to right, #071eae, #d020d0);
+    
+}
+
+.news{
+   
+    width:50%;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    margin-left: 3rem;
+    padding:1rem;
+    font-size: 15px;
+}
+
+.email{
+    
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.input{
+    height: 4vh;
+    width: 40vw;
+    
+
+
+}
+
+.btnsd{
+    background-color: rgb(12, 175, 240) ;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    height: 3.9vh;
+    border:  white solid 1px;
+    width:10vw;
+    border-left: none;
+    /* border: white solid 1px; */
+    /* border-radius: 2px; */
+    color: white;
+    text-align: center;
+    margin-right:4rem;
+   
+    margin-bottom: -5rem;
+    align-items: center;
+    cursor: pointer;
     
 }
 
@@ -1817,9 +1929,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
-    margin:1rem;
+    margin:2rem;
     margin-top: 4rem;
     margin-bottom: 9rem;
+    padding: 2rem;
 }
 
 
@@ -1861,6 +1974,7 @@ body {
 .dollar{
     font-size: 20px;
     color:rgb(12, 175, 240) ;
+    margin-bottom: 2rem;
     
 }
 
@@ -1898,11 +2012,11 @@ body {
 }
 
 .dsection{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
     padding: 4rem;
     padding-top:3rem;
-    gap: 10rem;
+    gap: 7rem;
 }
 
 .branches{
@@ -1913,16 +2027,17 @@ body {
 
 
 .branch2{
-    font-size: 30px;
+    font-size: 40px;
+    margin-bottom: 2rem;
 }
 .branchesp{
-    font-size: 15px;
+    font-size: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .mapdiv{
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 
@@ -1933,13 +2048,13 @@ body {
 }
 
 .edal{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
 }
 
 .conty{
     width:100%;
-    height: 100vh;
+    height: 30vh;
 }
 
 .contdt{
@@ -1962,7 +2077,7 @@ input{
 }
 
 label{
-    font-size: 20px;
+    font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: dark;
     margin-left: -2rem;
@@ -2000,9 +2115,9 @@ label{
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    width: 105%;
+    width: 75%;
     height:6.5vh ;
-    margin-left: -2rem;
+    margin-left: 2rem;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
@@ -2012,7 +2127,7 @@ label{
 
 .consult{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin-top: 5rem;
     gap: 3rem;
     margin-bottom: 15rem;
@@ -2023,7 +2138,7 @@ label{
 .consultbtn{
     background-color:rgb(8, 151, 207) ;
     color: white;
-    width: 10vw;
+    width: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2038,26 +2153,28 @@ label{
     font-weight: bold;
     font-size: 28px;
     text-transform: capitalize;
-    margin-top: -1rem;
+    margin-top: 1rem;
 }
 
 .consultpara p{
     color: darkgray;
-    margin-top: -1rem;
+    margin-top: 2rem;
     font-size: 25px;
 }
 
 .sectionE{
     background-color: white;
     margin-top:-12rem ;
-    height: 90vh;
+    height: 72vh;
     
 }
 
 .footer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    margin: 5rem;
+    gap: 1rem;
     padding-top:3rem;
     
    
@@ -2119,16 +2236,6 @@ label{
     font-size: 30px;
     margin: 1rem;
    
-}
-
-
-
-
-
-
-
-
-
 
 
   }   
